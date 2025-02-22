@@ -3,69 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trusted Travel Agent</title>
+    <title>Rusa Hutan Adventure</title>
     <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">moqups</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#packages">Our Package</a></li>
-            <li><a href="#contact">Call Us</a></li>
-        </ul>
-    </nav>
+        <header class="main-header">
+            <div class="logo-company"></div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#packages" class="nav-link">Our Package</a></li>
+                    <li><a href="#callUs" class="nav-link">Call Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
 
     <!-- Banner Section -->
-    <header id="home">
-        <h1>Your Trusted Travel Agent's</h1>
-        <p>Your happiness is our happiness</p>
-    </header>
+    <main>
+        <header id="home">
+            <h1>Your Trusted Trip Organizer</h1>
+            <p>Step Higher, Explore Further</p>
+        </header>
 
-    <!-- Content Section -->
-    <section class="content">
-        <div class="left">
-            <div class="placeholder-image"></div>
-            <blockquote>
-                "Liburan jadi menyenangkan bersama Travel Agentku."
-                <br><strong>Florence Hughes</strong><br>
-                <small>Ibu Rumah Tangga, 28</small>
-            </blockquote>
-        </div>
-        <div class="right">
-            <h2>Contact Us</h2>
-            <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
-            <form id="contact-form">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="First and last name" required>
+        <!-- Content Section -->
+        <section class="content">
+            <div class="left">
+                <div class="slider">
+                    <img src="asets/image 1.avif" class="slide active" alt="Travel Image 1">
+                    <img src="asets/image 2.jpeg" class="slide" alt="Travel Image 2">
+                    <img src="asets/image 3.jpg" class="slide" alt="Travel Image 3">
+                    <img src="asets/image 4.jpg" class="slide" alt="Travel Image 4">
+                    <img src="asets/image 5.jpg" class="slide" alt="Travel Image 5">
+                    <img src="asets/image 6.webp" class="slide" alt="Travel Image 6">
+                </div>
+                <br>
+                <blockquote>
+                    "Liburan jadi menyenangkan bersama Travel Agentku."
+                    <br><strong>Florence Hughes</strong><br>
+                    <small><i class="fas fa-user"></i> Ibu Rumah Tangga, 28</small>
+                </blockquote>
+            </div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                <form id="contact-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="First and last name" required>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
 
-                <label for="interest">What are you interested in?</label>
-                <select id="interest" name="interest" required>
-                    <option value="">Select option</option>
-                    <option value="bali">Bali Trip</option>
-                    <option value="japan">Japan Tour</option>
-                </select>
+                    <label for="interest">What are you interested in?</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select option</option>
+                        <option value="Semeru">Semeru Mountain</option>
+                        <option value="Kerinci">Kerinci Mountain</option>
+                        <option value="Rinjani">Rinjani Mountain</option>
+                        <option value="Merbabu">Merbabu Mountain</option>
+                        <option value="Slamet">Slamet Mountain</option>
+                        <option value="Prau">Prau Mountain</option>
+                    </select>
 
-                <button type="submit">SEND</button>
-            </form>
-        </div>
-    </section>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </section>
 
     <!-- Features Section -->
-    <section class="features">
-        <h3>Use this space to provide users with more information about your offer.</h3>
-        <ul>
-            <li><span>1</span> Your first feature, written in the form of a benefit statement.</li>
-            <li><span>2</span> Your second feature, written in the form of a benefit statement.</li>
-            <li><span>3</span> Your third feature, written in the form of a benefit statement.</li>
-        </ul>
-    </section>
+        <section class="features">
+            <h3>Use this space to provide users with more information about your offer.</h3>
+            <ul>
+                <li><span>1</span> Your first feature, written in the form of a benefit statement.</li>
+                <li><span>2</span> Your second feature, written in the form of a benefit statement.</li>
+                <li><span>3</span> Your third feature, written in the form of a benefit statement.</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Our Packages -->
+        <section id="packages" class="packages">
+            <header>
+                <h1>Our Package</h1>
+            </header>
+           
+            <div class="package-list">
+                <article class="package-item"><i class="fas fa-map-marker-alt"></i> Semeru 3.676ndpl - Explore TNBTS</article>
+                <article class="package-item"><i class="fas fa-map-marker-alt"></i> Kerinci 3.800mdpl - Explore Danau Kaco & Gunung 7</article>
+                <article class="package-item"><i class="fas fa-map-marker-alt"></i> Rinjani 3.726mdpl - Explore Sembalun & Gilitrawangan</article>
+                <article class="package-item"><i class="fas fa-map-marker-alt"></i> Merbabu 3.142mdpl - Explore Kopeng </article>
+                <article class="package-item"><i class="fas fa-map-marker-alt"></i> Slamet 3.418mdpl - Explore Guci & Hot Spring </article>
+                <article class="package-item"><i class="fas fa-map-marker-alt"></i> Prau 2.565mdpl - Explore Dieng & Kledung </article>
+            </div>
+        </section>
+        <hr>
 
-    <script src="js/project.js"></script>
+        <!-- Call to Action -->
+        <section id="callUs" class="callUs">
+            <h1>Your Closing Argument Headline</h1>
+            <p>Suspensidise egestas rhoncus urna in bibendum...</p>
+            <button class="cta-button">CALL TO ACTION</button>
+        </section>
+    </main>
+    <br>
+<hr>
+        <!-- Footer -->
+            <footer>
+                <div class="footer-content">
+                    <img src="asets/logoRHA.jpg" alt="Company Logo" class="footer-logo">
+                    <p>Terms of Service | Privacy Policy</p>
+                    <p><p><i class="fas fa-copyright"></i> 2025 Fahira</p>
+                </p>
+                </div>
+            </footer>
+
+        <!-- Scroll Up Button -->
+        <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+        <script src="js/project.js"></script>
 </body>
 </html>
