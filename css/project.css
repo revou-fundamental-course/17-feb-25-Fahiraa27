@@ -1,6 +1,6 @@
 /* Global Styling */
 body {
-    font-family: 'Homenaje', sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -12,7 +12,7 @@ body {
     background-color: #41413F;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 8px; /* Tambahkan padding agar lebih rapi */
+    padding: 8px 8px; /* Tambahkan padding agar lebih rapih */
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -29,12 +29,22 @@ body {
     border: 2px solid rgb(255, 255, 255);
 }
 
+.company-name {
+    color: white;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    border-radius: 20px 20px 0 0;
     background: #ffffff00;
 }
 
@@ -65,7 +75,6 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     border: 1px solid #ffffff;
-    border-radius: 3%;
     color: rgb(255, 255, 255);
 }
 
@@ -94,17 +103,18 @@ header p {
 .left {
     flex: 1;
     text-align: left;
+    align-items: center;
 }
 
 /* Slider */
 .slider {
     width: 100%;
-    height: 360px;
+    height: 425px;
     overflow: hidden;
     position: relative;
-    border: 2px solid #fff; /* Tambahkan border putih */
-    border-radius: 15px; /* Sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    border: 2px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .slider img {
@@ -114,7 +124,7 @@ header p {
     position: absolute;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    border-radius: 15px; /* Pastikan gambar juga melengkung */
+    border-radius: 15px;
 }
 
 .slider img.active {
@@ -144,17 +154,19 @@ blockquote small {
 
 /* Form Section */
 .right {
+    align-items: center;
     flex: 1;
     text-align: left;
     background: #f8f8f8;
     padding: 20px;
-    border-radius: 10px; /* Membuat sudut lebih membulat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
 }
 
 .right h2 {
     margin-bottom: 10px;
-    color: #333; /* Warna teks lebih gelap untuk kontras */
+    color: #333;
 }
 
 form {
@@ -166,32 +178,33 @@ form input, form select, form button {
     padding: 12px;
     margin: 5px 0;
     width: 96%;
-    border: 1px solid #ccc; /* Border tipis untuk input */
-    border-radius: 8px; /* Membuat elemen lebih smooth */
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 form input:focus, form select:focus {
-    border-color: #007BFF; /* Efek warna saat fokus */
+    border-color: #007BFF;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 form button {
+    font-family: 'Outfit';
     background: black;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 8px; /* Sudut tombol membulat */
+    border-radius: 8px;
     transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #333; /* Efek hover */
+    background: #333;
 }
 
 /* Features Section */
 .features {
-    text-align: left;
+    text-align: justify;
     padding: 20px;
 }
 
@@ -203,8 +216,24 @@ form button:hover {
 .features li {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    gap: 12px;
 }
+
+.features li i {
+    font-size: 22px;
+    width: 35px;
+    text-align: center;
+}
+
+/* Warna langsung pada ikon */
+.features li i.fa-shield-alt { color: #e53935; }
+.features li i.fa-hiking { color: #2e7d32; }
+.features li i.fa-list-ul { color: #fb8c00; }
+.features li i.fa-mountain { color: #1e88e5; }
+.features li i.fa-leaf { color: #4caf50; }
+.features li i.fa-camera { color: #8e24aa; }
+
 
 .features li span {
     width: 30px;
@@ -217,33 +246,34 @@ form button:hover {
     align-items: center;
     margin-right: 10px;
 }
+
 /* Our Package */
 .packages {
     padding: 50px 30px;
     background: #f8f8f8;
-    text-align: center; /* Pusatkan header */
+    text-align: center;
 }
 
 .packages header {
     margin-bottom: 20px;
-    justify-content: center; /* Pusatkan horizontal */
-    align-items: center; /* Pusatkan vertikal */
-    flex-direction: column; /* Pastikan teks tetap di bawah */
-    margin: 0 auto 20px auto; /* Atur margin agar simetris */
-    width: 100%; /* Pastikan header memenuhi lebar parent */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+    width: 100%;
 }
     
     .packages h1 {
     font-size: 28px;
     font-weight: bold;
-    margin: 0; /* Hilangkan margin default */
-    padding-bottom: 10px; /* Beri sedikit jarak ke bawah */
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 .package-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 2 kolom */
-    grid-template-rows: repeat(2, auto); /* 3 baris */
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, auto);
     gap: 20px;
     justify-content: center;
     max-width: 1000px;
@@ -252,32 +282,194 @@ form button:hover {
 
 .package-item {
     font-size: 18px;
-    padding: 15px;
+    padding: 20px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
 }
 
 .package-item i {
     color: #d8300b;
+    font-size: 22px;
 }
 
-
 /* Call to Action */
+.callUs {
+    text-align: center;
+    padding: 40px;
+    background-color: #EBDEAF;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.articles-grid article {
+    background-color: #EBDEAF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articles-grid article {
+    background-color: #EBDEAF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articles-grid article p {
+    text-align: left;
+}
+
+/* Warna ikon untuk tiap kategori */
+.articles-grid article h4 i.fa-info-circle { color: #007BFF; }
+.articles-grid article h4 i.fa-star { color: #FFD700; }
+.articles-grid article h4 i.fa-mountain { color: #4CAF50; }
+.articles-grid article h4 i.fa-map-marker-alt { color: #FF5722; }
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.articles-grid article {
+    background-color: #EBDEAF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articles-grid article {
+    background-color: #EBDEAF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articles-grid article p {
+    text-align: left;
+}
+
+/* Warna ikon untuk tiap kategori */
+.articles-grid article h4 i.fa-info-circle { color: #007BFF; }
+.articles-grid article h4 i.fa-star { color: #FFD700; }
+.articles-grid article h4 i.fa-mountain { color: #4CAF50; }
+.articles-grid article h4 i.fa-map-marker-alt { color: #FF5722; }
+
+/* Warna untuk ikon kontak */
+.articles-grid article p i.fa-phone-alt { color: #28A745; }
+.articles-grid article p i.fa-instagram { color: #E1306C; }
+.articles-grid article p i.fa-whatsapp { color: #25D366; }
+
+/* Warna untuk ikon lokasi */
+.articles-grid article p strong i.fa-map-marker-alt { color: #F44336; }
+
+/* Warna untuk ikon kontak */
+.articles-grid article p i.fa-phone-alt { color: #28A745; }
+.articles-grid article p i.fa-instagram { color: #E1306C; }
+.articles-grid article p i.fa-whatsapp { color: #25D366; }
+
+/* Warna untuk ikon lokasi */
+.articles-grid article p strong i.fa-map-marker-alt { color: #F44336; }
+
+/* Style umum untuk ikon media sosial */
+.social-link {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+/* Warna untuk ikon & teks Instagram */
+.instagram {
+    color: #db2f69;
+}
+
+.instagram:hover {
+    color: #C13584;
+}
+
+/* Warna untuk ikon & teks WhatsApp */
+.whatsapp {
+    color: #0b4620;
+}
+
+.whatsapp:hover {
+    color: #1EBEA5;
+}
+
+/* Ukuran dan warna default untuk ikon Font Awesome */
+p i {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Sesuaikan warna ikon dengan link */
+p .fa-instagram {
+    color: #E1306C;
+}
+
+p .fa-whatsapp {
+    color: #25D366;
+}
+
 .cta {
     padding: 30px;
 }
 
 .cta-button {
     padding: 10px 20px;
+    font-family: 'Outfit';
+    border-radius: 8px;
     background: black;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 5px;
+    background-color: #41413F;
+    color: rgb(255, 249, 249);
+    font-size: 12px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.footer-content i {
+    color: white;
+    font-size: 14px;
+    margin-right: 5px;
 }
 
 /* Scroll to Top Button */
@@ -292,45 +484,29 @@ form button:hover {
     display: none;
     cursor: pointer;
 }
-.footer-content {
-    text-align: center;
-    padding: 5px; /* Kurangi padding agar lebih kecil */
-    background-color: #41413F;
-    color: rgb(255, 249, 249);
-    font-size: 12px; /* Perkecil ukuran font */
-}
-
-.footer-logo {
-    width: 40px; /* Sesuaikan ukuran logo */
-    height: 40px; /* Pastikan tinggi dan lebar sama */
-    border-radius: 50%; /* Membuat logo menjadi bulat */
-    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
-    margin-bottom: 1px;
-    border: 2px solid rgb(0, 0, 0); /* Opsional: Tambahkan border */
-}
 
 #scrollTopBtn {
-    position: fixed; /* Tetap di layar saat scroll */
-    bottom: 20px; /* Jarak dari bawah */
-    right: 20px; /* Jarak dari kanan */
-    width: 40px; /* Ukuran tombol */
-    height: 40px; /* Pastikan tinggi dan lebar sama */
-    border-radius: 50%; /* Membuatnya bulat */
-    background-color: #000000; /* Warna latar */
-    color: white; /* Warna ikon */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
     font-size: 10px;
     border: none;
     cursor: pointer;
-    display: none; /* Sembunyikan default, bisa ditampilkan saat scroll */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: background 0.3s, transform 0.2s;
 }
 
 #scrollTopBtn:hover {
-    background-color: #585756; /* Warna saat hover */
-    transform: scale(1.1); /* Efek membesar sedikit */
+    background-color: #585756;
+    transform: scale(1.1);
 }
 
 #scrollTopBtn i {
-    font-size: 8px; /* Ukuran ikon */
+    font-size: 8px;
 }

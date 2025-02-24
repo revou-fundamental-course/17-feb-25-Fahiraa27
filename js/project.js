@@ -1,3 +1,5 @@
+
+// Validation
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();
@@ -8,6 +10,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         event.preventDefault();
     }
 });
+
 // Scroll to top button
 let scrollTopBtn = document.getElementById("scrollTopBtn");
 
@@ -22,6 +25,7 @@ window.onscroll = function() {
 scrollTopBtn.addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
 // Image Slider
 let slides = document.querySelectorAll(".slider img");
 let currentSlide = 0;
@@ -34,6 +38,7 @@ function nextSlide() {
 
 setInterval(nextSlide, 3000); // Ganti gambar setiap 3 detik
 
+// Smoth Scroll
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault(); // Mencegah perilaku default link
