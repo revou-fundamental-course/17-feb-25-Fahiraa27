@@ -48,6 +48,14 @@ document.querySelector(".slider").addEventListener("click", function() {
     slideInterval = setInterval(nextSlide, 3000); // Restart interval setelah klik
 });
 
+// Call Us function button
+document.querySelector(".cta-button").addEventListener("click", function() {
+    const phoneNumber = "62881082503798"; // Ganti dengan nomor tujuan
+    const message = encodeURIComponent("Halo, saya tertarik dengan layanan Anda!");
+    window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+  });
+  
+
 // Smoth Scroll
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(event) {

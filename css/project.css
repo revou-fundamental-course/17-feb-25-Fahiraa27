@@ -1,110 +1,3 @@
-/* --- Tambahkan ke bagian paling bawah file CSS --- */
-
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .left, .right {
-        width: 90%;
-        max-width: 600px;
-    }
-
-    .package-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main-header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .logo-company {
-        width: 50px;
-        height: 50px;
-    }
-
-    .company-name {
-        font-size: 14px;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav ul li a {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-    .slider {
-        height: 250px;
-    }
-
-    .slider-btn {
-        padding: 6px;
-        font-size: 18px;
-    }
-
-    .packages {
-        padding: 30px 15px;
-    }
-
-    .package-list {
-        grid-template-columns: 1fr;
-    }
-
-    .articles-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 22px;
-    }
-
-    .slider {
-        height: 200px;
-    }
-
-    .slider-btn {
-        font-size: 16px;
-    }
-
-    .right {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .package-list {
-        grid-template-columns: 1fr;
-    }
-
-    .articles-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        font-size: 10px;
-    }
-}
-
 /* Global Styling */
 body {
     font-family: 'Outfit', sans-serif;
@@ -616,4 +509,109 @@ p .fa-whatsapp {
 
 #scrollTopBtn i {
     font-size: 8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .package-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-company {
+        width: 50px;
+        height: 50px;
+    }
+
+    .company-name {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .slider {
+        height: 250px;
+    }
+
+    .slider-btn {
+        padding: 6px;
+        font-size: 18px;
+    }
+
+    .packages {
+        padding: 30px 15px;
+    }
+
+    .package-list {
+        grid-template-columns: 1fr;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .slider {
+        height: 200px;
+    }
+
+    .slider-btn {
+        font-size: 16px;
+    }
+
+    .right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .package-list {
+        grid-template-columns: 1fr;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        font-size: 10px;
+    }
 }
