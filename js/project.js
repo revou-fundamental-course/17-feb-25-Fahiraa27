@@ -8,6 +8,8 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     if (name === "" || email === "" || interest === "") {
         alert("Harap isi semua data!");
         event.preventDefault();
+    } else {
+        alert("Data berhasil diinput! Terima kasih telah menghubungi kami.");
     }
 });
 
@@ -36,7 +38,15 @@ function nextSlide() {
     slides[currentSlide].classList.add("active");
 }
 
-setInterval(nextSlide, 3000); // Ganti gambar setiap 3 detik
+// Ganti gambar otomatis setiap 3 detik
+let slideInterval = setInterval(nextSlide, 3000);
+
+// Fungsi untuk mengganti slide saat diklik
+document.querySelector(".slider").addEventListener("click", function() {
+    clearInterval(slideInterval); // Hentikan pergeseran otomatis saat diklik
+    nextSlide();
+    slideInterval = setInterval(nextSlide, 3000); // Restart interval setelah klik
+});
 
 // Smoth Scroll
 document.querySelectorAll('.nav-link').forEach(link => {
